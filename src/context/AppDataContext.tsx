@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useReducer, useContext } from "react";
-import type { HomePage } from "@/src/types/homePage.types";
+import type { HomePage } from "@/types/homePage.types";
 
 // -------------------- State Types --------------------
 

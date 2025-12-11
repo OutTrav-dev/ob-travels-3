@@ -2,7 +2,7 @@
 
 import { useAppData } from "@/src/context/AppDataContext";
 import React, { useState } from "react";
-import StatsStrip from "./StatsStrip";
+import StatsStrip from "./components/StatsStrip";
 import Image from "next/image";
 
 const HeroBanner = () => {

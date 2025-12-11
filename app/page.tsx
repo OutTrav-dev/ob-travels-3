@@ -3,7 +3,7 @@ import AdditionalVideoBannerOne from "@/src/features/Home/AdditionalVideoBannerO
 import BookYourTickets from "@/src/features/Home/BookYourTickets";
 import CompanyStats from "@/src/features/Home/CompanyStats";
 import DomesticDestinations from "@/src/features/Home/DomesticDestinations";
-import FloatingAction from "@/src/features/Home/FloatingAction";
+import FloatingAction from "@/src/features/Home/components/FloatingAction";
 import HeroBanner from "@/src/features/Home/HeroBanner";
 import InternationalDestinations from "@/src/features/Home/InternationalDestinations";
 import JoinCommunityBanner from "@/src/features/Home/JoinCommunityBanner";
@@ -11,7 +11,6 @@ import OurClients from "@/src/features/Home/OurClients";
 import Testimonials from "@/src/features/Home/Testimonials";
 import TopCelebs from "@/src/features/Home/TopCelebs";
 import TrendingDestination from "@/src/features/Home/TrendingDestination";
-import VideoCard from "@/src/components/VideoCard";
 
 export default function Home() {
   return (

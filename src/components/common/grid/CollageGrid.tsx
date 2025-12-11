@@ -1,5 +1,5 @@
 "use client";
-import { CollageGridProps } from "@/src/types/homePage.types";
+import { CollageGridProps } from "@/types/homePage.types";
 import Image from "next/image";
 import React from "react";
 
@@ -50,15 +50,15 @@ export default function CollageGrid({ items }: CollageGridProps) {
               {/* Catchy price: "From ₹2000/-" */}
               <span
                 className="
-                  inline-flex items-center gap-1.5 px-3 py-1.5
-                  rounded-full bg-white/90 backdrop-blur
-                  text-emerald-800 font-bold text-sm md:text-base
-                  shadow-sm border border-white group-hover:bg-white
+                  inline-flex items-center gap-1.5
+                  rounded-full px-3 py-2 bg-linear-to-b from-emerald-500 to-emerald-700 backdrop-blur
+                  text-white font-bold text-sm md:text-base
+                  shadow-sm 
                 "
                 aria-label={`From ${item.price}`}
                 title={`From ${item.price}`}
               >
-                <span className="text-emerald-700/90 font-semibold">From</span>
+                <span className="text-white text-xs font-semibold">From</span>
                 <span className="tabular-nums">{item.price}</span>
               </span>
             </div>

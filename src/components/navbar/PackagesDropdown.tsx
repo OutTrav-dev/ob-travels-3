@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { LinkItem } from "@/src/types/navbar.types";
+import { LinkItem } from "@/types/navbar.types";
 
 export default function PackagesDropdown({ link }: { link: LinkItem }) {
   const [open, setOpen] = useState(false);

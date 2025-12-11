@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import PackagesDropdown from "./PackagesDropdown";
-import { LinkItem } from "@/src/types/navbar.types";
+import { LinkItem } from "@/types/navbar.types";
 
 export default function DesktopNav({ navLinks }: { navLinks: LinkItem[] }) {
   return (

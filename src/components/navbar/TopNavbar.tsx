@@ -6,7 +6,7 @@ import Link from "next/link";
 import logoWhite from "@/public/images/outboundLogoWhite.png";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import { LinkItem } from "@/src/types/navbar.types";
+import { LinkItem } from "@/types/navbar.types";
 
 const navLinks: LinkItem[] = [
   {
@@ -22,8 +22,8 @@ const navLinks: LinkItem[] = [
     label: "Destinations",
     href: "/destinations",
     submenu: [
-      { label: "International", href: "/destinations?category=international" },
-      { label: "Domestic", href: "/destinations?category=domestic" }
+      { label: "International", href: "/destinations?type=international" },
+      { label: "Domestic", href: "/destinations?type=domestic" }
     ]
   },
   { label: "About us", href: "/about" },

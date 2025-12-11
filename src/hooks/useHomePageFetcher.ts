@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { fetchWithRetry } from "@/src/lib/fetchWithRetry";
 import { useAppData } from "@/src/context/AppDataContext";
-import type { HomePage } from "@/src/types/homePage.types";
+import type { HomePage } from "@/types/homePage.types";
 import { AxiosError } from "axios";
 
 const CACHE_KEY = "homePageCache";

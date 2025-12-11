@@ -115,6 +115,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "videocdn.cdnpk.net",
       },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
     ],
   },
 };

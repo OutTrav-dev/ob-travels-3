@@ -5,6 +5,7 @@ import CookieConsentWrapper from "@/src/components/cookie/CookieConsentWrapper";
 import { AppDataProvider } from "@/src/context/AppDataContext";
 import TopNavbar from "@/src/components/navbar/TopNavbar";
 import Footer from "@/src/components/footer/Footer";
+import { ToastProvider } from "@/src/context/ToastContext";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
@@ -23,15 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TopNavbar />
-        <AppDataProvider>{children}</AppDataProvider>
-        <CookieConsentWrapper />
-        <Footer />
+        <ToastProvider>
+          <TopNavbar />
+          <AppDataProvider>{children}</AppDataProvider>
+          <CookieConsentWrapper />
+          <Footer />
+        </ToastProvider>
       </body>
     </html>
   );

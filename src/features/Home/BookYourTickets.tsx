@@ -2,9 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import TicketBase from "./TicketBase";
+import TicketBase from "./components/TicketBase";
 import { useAppData } from "@/src/context/AppDataContext";
-import type { BookYourTicketsSection } from "@/src/types/homePage.types";
+import type { BookYourTicketsSection } from "@/types/homePage.types";
 import Section from "@/src/components/common/layout/Section";
 
 export default function BookYourTickets() {

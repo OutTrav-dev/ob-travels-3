@@ -3,7 +3,7 @@
 import CollageGrid from "@/src/components/common/grid/CollageGrid";
 import Section from "@/src/components/common/layout/Section";
 import { useAppData } from "@/src/context/AppDataContext";
-import type { DestinationCard, CollageItem } from "@/src/types/homePage.types";
+import type { DestinationCard, CollageItem } from "@/types/homePage.types";
 
 const DomesticDestinations = () => {
   const { state } = useAppData();
@@ -20,7 +20,7 @@ const DomesticDestinations = () => {
   return (
     <Section
       title="DOMESTIC DESTINATIONS"
-      viewAllUrl="/destinations?category=domestic"
+      viewAllUrl="/destinations?type=domestic"
     >
       <div className="">
         <CollageGrid items={items} />

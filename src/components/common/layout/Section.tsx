@@ -38,7 +38,7 @@ const Section: React.FC<SectionProps> = ({
             noSpace ? "mx-2 md:mx-4 lg:mx-6" : ""
           }`}
         >
-          <h2 className="text-lg md:text-2xl lg:text-3xl font-bold tracking-tight text-[#052210] ">
+          <h2 className="text-lg md:text-2xl lg:text-3xl font-bold tracking-tight text-[#052210] capitalize ">
             {title}
           </h2>
           {viewAllUrl && <ViewAllLink viewAll={viewAllUrl} />}

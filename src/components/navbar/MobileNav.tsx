@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
-import { LinkItem } from "@/src/types/navbar.types";
+import { LinkItem } from "@/types/navbar.types";
 
 interface MobileNavProps {
   navLinks: LinkItem[];

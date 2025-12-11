@@ -1,6 +1,6 @@
 "use client";
 
-import { VideoCardConfig } from "@/src/types/homePage.types";
+import { VideoCardConfig } from "@/types/homePage.types";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 

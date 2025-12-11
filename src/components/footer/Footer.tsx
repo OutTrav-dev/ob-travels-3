@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           {footerData.map((section, i) => (
             <div
               key={i}
-              className="pt-3 flex flex-col justify-start min-h-[180px] w-full max-w-[220px] sm:max-w-[240px]"
+              className="pt-3 flex flex-col justify-start min-h-[180px] w-full max-w-[220px] sm:max-w-60"
             >
               {section.items ? (
                 <>

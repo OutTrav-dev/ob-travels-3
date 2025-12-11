@@ -3,7 +3,7 @@
 import ShowcaseCarousel from "@/src/components/common/carousel/ShowcaseCarousel";
 import Section from "@/src/components/common/layout/Section";
 import { useAppData } from "@/src/context/AppDataContext";
-import type { TrendingDestinationItem } from "@/src/types/homePage.types";
+import type { TrendingDestinationItem } from "@/types/homePage.types";
 
 export default function TrendingDestination() {
   const { state } = useAppData();
@@ -16,7 +16,7 @@ export default function TrendingDestination() {
     }));
 
   return (
-    <Section title="TRENDING DESTINATIONS" viewAllUrl="/destinations?category=trending" noSpace className="mt-10">
+    <Section title="TRENDING DESTINATIONS" viewAllUrl="/destinations" noSpace className="mt-10">
       <div className="w-full overflow-x-hidden">
 
       <ShowcaseCarousel items={items} className="py-8" showDots />
