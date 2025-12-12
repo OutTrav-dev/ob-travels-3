@@ -69,7 +69,7 @@ export interface PackageDetail {
   amenities: string[];
   meta: MetaInfo;
   cancellation_policy: PolicyItem[];
-  itinerary: ItineraryDay[];
+  itinerary_details: ItineraryDay[];
   booking_details: BookingDetails;
   seo_url: string;
 }

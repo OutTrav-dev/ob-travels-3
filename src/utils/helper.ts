@@ -1,4 +1,17 @@
 import { ItineraryDay, MapPoint } from "@/types/PackageDetail.types";
+import sanitize from "sanitize-html";
+
+export function sanitizeHtml(input: string): string {
+  return sanitize(input, {
+    allowedTags: sanitize.defaults.allowedTags.concat(["img", "h1", "h2", "h3"]),
+    allowedAttributes: {
+      ...sanitize.defaults.allowedAttributes,
+      img: ["src", "alt", "title", "width", "height", "loading"],
+      a: ["href", "name", "target", "rel"],
+    },
+    allowedSchemes: ["http", "https", "mailto", "tel"],
+  });
+}
 
 export const toTitle = (slug: string) =>
   slug

@@ -64,7 +64,7 @@ const Header = ({
             <label htmlFor="destination-search" className="sr-only">
               Search destinations or packages
             </label>
-            <div
+            {/* <div
               className="
               flex items-center rounded-full px-3 py-2 md:px-4 md:py-2.5
               bg-white/25 backdrop-blur-md
@@ -105,7 +105,7 @@ const Header = ({
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

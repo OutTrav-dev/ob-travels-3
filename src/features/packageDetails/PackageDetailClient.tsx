@@ -133,7 +133,7 @@ export default function PackageDetailClient({ id }: Props) {
             <div>
               <Itinerary
                 days={
-                  data?.itinerary?.map((d) => ({
+                  data?.itinerary_details?.map((d) => ({
                     _id: d._id,
                     day: d.day,
                     title: d.title,
