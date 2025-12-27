@@ -6,11 +6,11 @@ import { API_URLS } from "@/src/api/apiUrls";
 import { useToast } from "@/src/context/ToastContext";
 import { fetchWithRetry } from "@/src/lib/fetchWithRetry";
 import { DestinationItem } from "@/types/destinations.types";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import DestinationCard from "./DestinationCard";
 import { useSearchParams } from "next/navigation";
 
-const DestinationList: React.FC = () => {
+const DestinationListInner: React.FC = () => {
   const searchParams = useSearchParams();
   const { showToast } = useToast();
 
@@ -86,6 +86,14 @@ const DestinationList: React.FC = () => {
         </div>
       )}
     </Section>
+  );
+};
+
+const DestinationList: React.FC = () => {
+  return (
+    <Suspense fallback={<DestinationGridSkeleton />}>
+      <DestinationListInner />
+    </Suspense>
   );
 };
 

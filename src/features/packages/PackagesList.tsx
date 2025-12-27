@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Section from "@/src/components/common/layout/Section";
 import { API_URLS } from "@/src/api/apiUrls";
 import { useToast } from "@/src/context/ToastContext";
@@ -10,7 +10,7 @@ import PackageCard from "./PackageCard";
 import PackagesGridSkeleton from "@/src/skeleton/PackagesGridSkeleton";
 import { PackagesCardItem } from "@/types/packages.types";
 
-const PackagesList: React.FC = () => {
+const PackagesListInner: React.FC = () => {
   const params = useParams();
   const searchParams = useSearchParams();
   const { showToast } = useToast();
@@ -115,6 +115,14 @@ const PackagesList: React.FC = () => {
         </div>
       )}
     </Section>
+  );
+};
+
+const PackagesList: React.FC = () => {
+  return (
+    <Suspense fallback={<PackagesGridSkeleton />}>
+      <PackagesListInner />
+    </Suspense>
   );
 };
 
