@@ -30,7 +30,7 @@ const HeroBanner = () => {
           muted
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover"
-          poster={d.fallbackImage}
+          poster={"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8fDA%3D"}
           onError={() => setVideoError(true)}
         >
           {d.videoSources.map((srcObj) => (
@@ -40,7 +40,7 @@ const HeroBanner = () => {
         </video>
       ) : (
         <Image
-          src={d.fallbackImage}
+          src={"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8fDA%3D"}
           alt="Travel destination background"
           fill
           className="absolute top-0 left-0 w-full h-full object-cover"

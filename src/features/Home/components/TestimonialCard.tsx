@@ -33,12 +33,12 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           flex-1 bg-green-50 rounded-xl p-4 md:p-8 shadow-sm flex flex-col justify-center
         "
       >
-        <h3 className="text-base md:text-lg font-bold">{name}</h3>
+        <h3 className="text-base md:text-lg font-bold">{name || "Jhonny Depp"}</h3>
 
         <div className="text-yellow-500 text-lg md:text-xl -mt-2 mb-1">★★★★★</div>
 
         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-          {text}
+          {text || "This is a fantastic Agency! Highly recommend it to everyone."}
         </p>
       </div>
     </div>
